@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+  <h1>
+    SHS Grad 2018 Writeups  
+  </h1>
+
+  <p>Welcome {{ user.first_name }} to the Sullivan Heights Secondary Grad Writeup App.</p>
+  {% for writeup in writeups %}
+  <div>
+    <h3>{{ writeup.username }}</h3>
+    <div>
+      {{ writeup.username }}
+    </div>
+    <div>
+      {{ writeup.username }}
+    </div>
+    <div>
+      {{ writeup.username }}
+    </div>
+  </div>
+  {% endfor %}
+{% else %}
+  <h1>
+    SHS Grad 2018 Writeups  
+  </h1>
+  <p>Welcome to the Sullivan Heights Secondary Grad Writeup App. To proceed,
+    please login with an account that has access.</p>
+{% endif %} 
+
+{% endblock %}
