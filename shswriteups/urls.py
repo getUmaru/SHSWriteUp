@@ -32,11 +32,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls, name="admin"),
     url(r'^$', RedirectView.as_view(url='/aa/')),
   
-    # RICHARDSON #
     ## STUNDENT APP AUTHENTICATION ROUTES ##
     #url(r'^login/$', login {'template_name': 'login.html'}, name="login"),
     #url(r'^$', index, name="index"),
-    # /RICHARDSON #
     #url(r'^login/$', views.login, name='login'),
     #url(r'^adminpan/$', views.adminpan, name="adminpan")
     ## END STUNDENT APP AUTHENTICATION ROUTES ##
